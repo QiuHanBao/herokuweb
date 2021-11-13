@@ -29,7 +29,6 @@ def result(city: str, city_info: CityInfo):
 
 
 if __name__ == '__main__':
-    # heroku2011.
     # 执行命令启动 : uvicorn run:app --reload
     # uvicorn.run('main:app', host='127.0.0.1', port=8000, reload=True, debug=True, workers=4)  # worker:进程的数量
     uvicorn.run('run:app', host='127.0.0.1', port=8000, reload=True)
